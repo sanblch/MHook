@@ -270,7 +270,7 @@ void MHSettings::FillDialogue(HWND hdwnd)
 		//SendDlgItemMessage(hdwnd,IDC_SENSITIVITY, CB_SETCURSEL, dlg_current_sensitivity, 0L);
 		
 		// 2. Клавиши
-		for(i=0;i<MH_NUM_SCANCODES;i++)
+		for(i=0;i<MH_NUM_SCANCODES_EXTRA;i++)
 		{
 			SendDlgItemMessage(hdwnd,IDC_UP, CB_ADDSTRING, 0, (LPARAM)(dlg_scancodes[i].stroka));
 			SendDlgItemMessage(hdwnd,IDC_RIGHT, CB_ADDSTRING, 0, (LPARAM)(dlg_scancodes[i].stroka));
